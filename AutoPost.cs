@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Configuration;
-using Ionic.Zip;
 using System.Windows.Forms;
 
 namespace AutoPost
@@ -126,18 +125,18 @@ namespace AutoPost
         /// <param name="zipfile">zip file to extract</param>
         public static void UnzipDownloadedFile(string zipfile)
         {
-            try
-            {
-                string fileDirOnLocal = ConfigurationManager.AppSettings["FileDirOnLocal"] + "";
-                fileDirOnLocal = Application.StartupPath + @"\" + fileDirOnLocal;
+            //try
+            //{
+            //    string fileDirOnLocal = ConfigurationManager.AppSettings["FileDirOnLocal"] + "";
+            //    fileDirOnLocal = Application.StartupPath + @"\" + fileDirOnLocal;
 
-                ZipFile zipFile = new ZipFile(zipfile);
-                zipFile.ExtractAll(fileDirOnLocal);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            //    ZipFile zipFile = new ZipFile(zipfile);
+            //    zipFile.ExtractAll(fileDirOnLocal);
+            //}
+            //catch (Exception ex)
+            //{
+            //    throw ex;
+            //}
         }
         public static void UpdateSetting(string key, string value)
         {

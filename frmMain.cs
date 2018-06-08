@@ -11,7 +11,6 @@ using System.Configuration;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using Ionic.Zip;
 using AutoPost.Classes.Helpers;
 using PdfSharp.Pdf;
 using PdfSharp.Pdf.IO;
@@ -37,7 +36,7 @@ namespace AutoPost
         string _CompanyCode = "";
         string _StoreNo = "";
         string _CurrentPrinter = "";
-        ZipFile zipFile = null;
+        //ZipFile zipFile = null;
         System.IO.StreamReader txtFileToPrint;
         System.Drawing.Font printFont;
         private static string access_token = "OAuth access_token=\"DoFgaC9misUub2G0LkwDEbBqBwrSW82guHfwRvni\"";
